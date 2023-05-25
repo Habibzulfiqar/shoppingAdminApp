@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddProducts">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_rect">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:text="Edit Products"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Change Image"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:id="@+id/image"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/image"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Enter Product Title"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/tf"
+                    android:singleLine="true"
+                    android:hint="Enter Job Title"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Enter Description"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:singleLine="true"
+                    android:background="@drawable/tf"
+                    android:hint="Enter Job Decription"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Select Category"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <Spinner
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="24dp"
+                    android:inputType="number"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="8dp"
+                    android:singleLine="true"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/tf"
+                    android:hint="Enter Price"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Enter Price"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="24dp"
+                    android:inputType="number"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="8dp"
+                    android:singleLine="true"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/tf"
+                    android:hint="Enter Price"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Number of product "
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+
+                <EditText
+                    android:id="@+id/numberOf"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:inputType="number"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:singleLine="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/tf"
+                    android:hint="Enter Quantity"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+
+
+
+
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="24dp"
+                    android:id="@+id/updateProduct"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="Update Product"
+                    android:textColor="@color/black"
+                    android:background="@drawable/gredient_color"/>
+            </TableLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Home" />
+
+
+
+
+
+        <item
+            android:id="@+id/addCategories"
+            android:icon="@drawable/add"
+            android:title="Add Categories" />
+
+        <item
+            android:id="@+id/viewCategories"
+            android:icon="@drawable/view_product"
+            android:title="View Categories" />
+
+        <item
+            android:id="@+id/addProduct"
+            android:icon="@drawable/add"
+            android:title="Add Product" />
+
+
+
+        <item
+            android:id="@+id/viewProducts"
+            android:icon="@drawable/view_product"
+            android:title="View Product" />
+
+        <item
+            android:id="@+id/outOfStock"
+            android:icon="@drawable/view_product"
+            android:title="Out of stock Products" />
+
+    </group>
+
+
+
+    <group
+        android:id="@+id/text_color_group1"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/viewOrders"
+            android:icon="@drawable/view_product"
+            android:title="View All Orders" />
+
+        <item
+            android:id="@+id/runningOrders"
+            android:icon="@drawable/view_product"
+            android:title="View Running Orders" />
+
+        <item
+            android:id="@+id/cancel"
+            android:icon="@drawable/view_product"
+            android:title="View Cancel Orders" />
+
+
+
+
+
+    </group>
+
+
+
+<!--        <group-->
+<!--            android:checkableBehavior="single"-->
+<!--            >-->
+
+<!--            <item-->
+<!--                android:id="@+id/users"-->
+<!--                android:icon="@drawable/view_product"-->
+<!--                android:title="View Users" />-->
+
+
+<!--        </group>-->
+
+
+
+
+
+
+
+
+
+
+
+    <group
+        android:id="@+id/menu_topbel"
+        android:checkableBehavior="none">
+
+        <item android:id="@+id/settings"
+            android:icon="@drawable/settings"
+            android:title="Settings"/>
+
+        <item android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout"/>
+    </group>
+</menu>

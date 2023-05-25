@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditCategories">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_rect">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:text="Edit Category"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Enter Category"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+
+                <EditText
+                    android:id="@+id/editCategoryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/tf"
+                    android:singleLine="true"
+                    android:hint="Enter Category"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+
+
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="24dp"
+                    android:id="@+id/addCategoryBtn"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="Update"
+                    android:textColor="@color/black"
+                    android:background="@drawable/gredient_color"/>
+            </TableLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
